@@ -1,10 +1,10 @@
-document.querySelector("#scroll-down").addEventListener("click", () => {
+document.querySelector("#scroll-down")?.addEventListener("click", () => {
     window.scrollTo({
-        top: document.querySelector("#about-me").offsetTop - 20,
+        top: document.querySelector("#about-me")?.offsetTop - 20,
     });
 });
 
-document.querySelector("#toggle-theme").addEventListener("click", () => {
+document.querySelector("#toggle-theme")?.addEventListener("click", () => {
     document.documentElement.classList.toggle("light-theme");
 });
 
