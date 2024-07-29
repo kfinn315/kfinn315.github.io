@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Finn | Web Developer</title>
     <meta name="color-scheme" content="dark light" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
@@ -43,9 +48,8 @@
 <body>
     <!--  -->
     <nav>
-        <div class="container">
+        <div>
             <div class="nav">
-                <img src="assets/logo.svg" alt="Kevin Finn logo" width="45" height="43" />
                 <ul class="nav-links">
                     <li>
                         <a href="#about-me" class="btn btn--nav">About me</a>
@@ -82,27 +86,29 @@
                 </ul>
             </div>
         </div>
-        <button id="toggle-theme" aria-label="Toggle dark theme">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
-                width="24px" fill="var(--light-icon)">
-                <rect fill="none" height="24" width="24" />
-                <path
-                    d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
-            </svg>
-        </button>
     </nav>
     <main>
         <section id="intro" class="layout-section" aria-describedby="intro-h1 intro-h2">
             <div class="container">
-                <h1 id="intro-h1" class="title--lg">Kevin Finn</h1>
-                <h2 id="intro-h2" class="title--lg">Web Developer</h2>
-                <p class="text--xl">
-                    Kevin is a web developer based in the United States.
-                </p>
-                <p class="text--xl">
-                    Kevin brings your idea to life with
-                    <strong>modern technology</strong>.
-                </p>
+                <div class="intro-hero">
+                    <img class="circle-img" src="./assets/hero.jpeg" width="400" height="400" />
+                    <div></div>
+                </div>
+                <div>
+                    <div id="intro-h1">
+                        <h1 class="title--lg">Kevin Finn</h1>
+                        <h2 class="title--lg">Web Developer</h2>
+                    </div>
+                    <div id="intro-h1">
+                        <p id="caption-1" class="text--xl intro-caption">
+                            Kevin is a web developer based in the United States.
+                        </p>
+                        <p id="caption-2" class="text--xl intro-caption">
+                            Kevin brings your idea to life with
+                            <strong>modern technology</strong>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about-me" class="layout-section" aria-labelledby="heading-aboutme">
@@ -113,7 +119,7 @@
                 <div class="layout-grid-half">
                     <div>
                         <p class="text--lg">
-                            Experienced developer with over a decade of expertise in creating web and mobile
+                            Hello! I'm a software developer with over a decade of expertise in creating web and mobile
                             applications utilizing .NET, JavaScript, and MySQL.
                         </p>
                         <p class="text--lg">

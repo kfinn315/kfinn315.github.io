@@ -1,10 +1,11 @@
 :root {
-    --primary: #f2d544;
+    /* --primary: #f2d544; */
+    --background-color: #F0966D;
     --dark-blue: #130c24;
     --black: #232020;
-    --gray: #999999;
+    --gray: #4c4c4c;
     --beige: #f5f5f1;
-    --gap: 80px;
+    --gap: 40px;
 
     /* theme dependent variables */
     --text-color: white;
@@ -20,18 +21,19 @@
 }
 
 html {
-    background-color: var(--dark-blue);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
+/* 
 html.light-theme {
-    background-color: var(--beige);
+    background-color: var(--background-color);
     --text-color: var(--black);
     --gray-light: var(--gray-dark);
     --light-icon: var(--black);
     --dark-icon: white;
     --anchor-color: var(--black);
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
     html {
@@ -41,7 +43,11 @@ html.light-theme {
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "DM Sans", sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    /* font-style: normal; */
 }
 
 input,
@@ -60,7 +66,9 @@ select {
     :root {
         --gap: 30px;
     }
+
     html {
-        font-size: 70%; /* as long as the smallest font is still legible */
+        font-size: 70%;
+        /* as long as the smallest font is still legible */
     }
 }
