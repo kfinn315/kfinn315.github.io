@@ -1,9 +1,13 @@
 .nav {
-    padding-block: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: var(--gray); */
+    max-width: 2000px;
+    /* padding-inline: 75px;
+    padding-block: 5px; */
+    padding: 5px 75px;
+    margin: auto;
+    color: var(--white);
 }
 
 .nav-links {
@@ -18,4 +22,9 @@
     .nav-links li:not(:last-child) {
         display: none;
     }
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 500;
 }

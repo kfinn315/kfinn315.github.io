@@ -6,6 +6,7 @@
 
 .layout-section-title {
     margin-bottom: 36px;
+    font-family: var(--font-primary);
 }
 
 .layout-grid-half {

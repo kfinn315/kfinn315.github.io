@@ -10,6 +10,8 @@ a:hover {
 
 p {
     color: var(--gray);
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 strong {
@@ -23,4 +25,12 @@ blockquote {
 
 address {
     font-style: normal;
+}
+
+nav {
+    background-color: var(--primary);
+}
+
+footer {
+    background: var(--black);
 }
