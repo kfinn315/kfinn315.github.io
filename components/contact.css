@@ -1,0 +1,76 @@
+#contact {
+    padding-bottom: 0px;
+    --grid-col-1: 327px;
+    --grid-gap: 77px;
+    display: none;
+}
+
+#contact .container {
+    align-items: start;
+    display: grid;
+    grid-template-columns: var(--grid-col-1) var(--grid-gap) auto auto auto;
+    grid-template-areas: "detail . phone email icon";
+}
+
+#contact h3 {
+    font-weight: 300;
+}
+
+.contact-text-sm {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#contact .container>div {
+    text-align: end;
+}
+
+#contact .container>div:first-child {
+    text-align: start;
+}
+
+#contact div#design {
+    grid-area: detail;
+}
+
+#contact div#phone {
+    grid-area: phone;
+}
+
+#contact div#email {
+    grid-area: email;
+}
+
+#contact div#icon {
+    grid-area: icon;
+    min-width: 50px;
+    aspect-ratio: 1;
+    background-color: white;
+}
+
+@media(width <=991px) {
+    #contact {
+        margin-bottom: 30px;
+    }
+
+    #contact .container {
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "detail phone email icon";
+    }
+
+    .contact-text-sm {
+        font-size: 1rem;
+    }
+
+    #contact div#icon {
+        min-width: 55px;
+    }
+}
+
+@media(width <=767px) {
+    #contact {
+        padding-bottom: 40px;
+    }
+}

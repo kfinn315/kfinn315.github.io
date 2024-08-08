@@ -6,7 +6,7 @@
     --gray: #4c4c4c;
     --beige: #f5f5f1;
     --text-color: var(--black);
-    --gap: 40px;
+    --gap: 45px;
 
     /* theme dependent variables */
     --text-color: var(--black);
@@ -17,6 +17,9 @@
     --anchor-color: var(--primary);
     --font-primary: 'Roboto Condensed', 'sans-serif';
     --font-secondary: 'DM Sans', 'sans-serif';
+
+    /* --medium-point: 991px;
+    --small-point: 767px; */
 }
 
 * {
@@ -62,4 +65,11 @@ select {
         font-size: 70%;
         /* as long as the smallest font is still legible */
     }
+}
+
+.img-overlay{
+    position: absolute;
+    z-index: 1000000;
+    opacity: .5;
+    width: 100%;
 }

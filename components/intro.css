@@ -1,18 +1,33 @@
 #intro {
-    background-color: var(--primary);
     position: relative;
-    color: var(--white);
+    margin-top: 150px;
+    margin-bottom: 65px;
 
-    /* for scroll-down */
-    margin-top: 0px;
-    padding-block: 85px 180px;
+    --grid-col-1: 327px;
+    --grid-gap: 77px;
 }
 
 #intro>.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2px var(--gap);
     align-items: center;
+    display: grid;
+    grid-template-columns: var(--grid-col-1) auto;
+    column-gap: var(--grid-gap);
+}
+
+.intro-col1 {
+    display: grid;
+    justify-content: center;
+}
+
+.intro-col1>div {
+    grid-row: 1;
+    grid-column: 1;
+    border: var(--white) 3px solid;
+    border-radius: 50%;
+}
+
+.intro-col2 {
+    padding-top: 15px;
 }
 
 #intro-h1 {
@@ -32,22 +47,35 @@
     color: var(--black);
 }
 
-.intro-hero {
-    display: grid;
-    grid-template-areas: "body";
-    justify-content: center;
+#intro-hero {
+    grid-row: 1;
+    grid-column: 1
 }
 
-.intro-hero>div {
-    grid-area: body;
-    border: var(--white) 3px solid;
-    border-radius: 50%;
+@media(width <=991px) {
+    #intro {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    
+        /* padding-block: 55px 0px; */
+        --grid-col-1: 250px;
+        --grid-gap: 50px;
+    }
+
+    .intro-col2 {
+        padding-top: 0px;
+    }
 }
 
-img.circle-img {
-    grid-area: body;
-    border: transparent 8px solid;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+@media(width <=767px) {
+    #intro {
+        margin-top: 55px;
+        /* margin-bottom: 110px; */
+    
+        padding-bottom: 10px;
+        --grid-col-1: 150px;
+        --grid-gap: 25px;
+        column-gap: 25px;
+        /* grid-template-columns: 150px auto; */
+    }
 }

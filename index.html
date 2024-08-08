@@ -88,26 +88,41 @@
         </div>
     </nav>
     <main>
-        <section id="intro" class="layout-section" aria-describedby="intro-h1 intro-h2">
-            <div class="container">
-                <div class="intro-hero">
-                    <img class="circle-img" src="./assets/hero.jpeg" width="400" height="400" />
-                    <div></div>
-                </div>
-                <div>
-                    <div id="intro-h1">
-                        <h1 class="title--lg">Kevin Finn</h1>
-                        <h2 class="title--lg">Web Developer</h2>
+        <div class="layout-section--highlighted">
+            <section id="intro" class="layout-section " aria-describedby="intro-h1 intro-h2">
+                <div class="container">
+                    <div class="intro-col1">
+                        <img id="intro-hero" class="img img--circle img--transparent-border" src="./assets/hero.jpeg"
+                            width="400" height="400" />
+                        <div></div>
                     </div>
-                    <div id="intro-p">
+                    <div class="intro-col2">
+                        <h1 class="title--lg">Kevin Finn<br />Web Developer</h1>
                         <p id="caption-2" class="text--xl intro-caption">
                             Bringing your idea to life with
                             <strong>modern technology</strong>.
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="contact" class="layout-section" aria-describedby="design">
+                <div class="container">
+                    <div class="intro--detail" id="design">
+                        <h3>Location</h3>
+                        <p class="contact-text-sm">North Caronlina, USA</p>
+                    </div>
+                    <div class="intro--detail" id="phone">
+                        <h3>Phone</h3>
+                        <a class="contact-text-sm" href="tel:xxx-xxx-xxxx">xxx-xxx-xxxx</a>
+                    </div>
+                    <div class="intro--detail" id="email">
+                        <h3>Drop your message</h3>
+                        <a class="contact-text-sm" href="email:email@address.com">email@address.com</a>
+                    </div>
+                    <div id="icon"></div>
+                </div>
+            </section>
+        </div>
         <section id="about-me" class="layout-section" aria-labelledby="heading-aboutme">
             <div class="container">
                 <h2 id="heading-aboutme" class="title--sm layout-section-title">
@@ -143,9 +158,9 @@
                             height="300" alt="Sunburst app" class="portfolio-screenshot" />
                     </a>
                     <div>
-                        <h3 class="title">Sunburst</h3>
+                        <h3 class="title">React Sunburst</h3>
                         <p class="text">
-                            A Sunburst Chart Using ReactJS, D3.js and Typescript.
+                            A Sunburst Chart built using ReactJS, D3.js and Typescript.
                         </p>
                         <a href="https://github.com/kfinn315/ReactSunburst" class="btn btn--line"
                             target="_blank">Repository</a>

@@ -24,3 +24,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+.layout-section--highlighted {
+    padding-block: 1px;
+    background-color: var(--primary);
+    color: var(--white);
+}

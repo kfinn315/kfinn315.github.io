@@ -5,7 +5,7 @@
     max-width: 2000px;
     /* padding-inline: 75px;
     padding-block: 5px; */
-    padding: 5px 75px;
+    padding: 5px 30px;
     margin: auto;
     color: var(--white);
 }
@@ -27,4 +27,16 @@
 .nav-logo {
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media(width<=991px) {
+    .nav {
+        max-width: 960px
+    }
+}
+
+@media(width<=767px) {
+    .nav {
+        max-width: 735px;
+    }
 }
